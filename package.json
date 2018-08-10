@@ -1,16 +1,12 @@
 {
-  "name": "parcel-reactjs",
+  "name": "galikteam",
   "version": "1.0.0",
-  "description": "A minimal React.js boilerplate with parcel as bundler",
+  "description": "GALIKteam Website",
   "main": "index.js",
   "scripts": {
     "start": "parcel ./src/index.html"
   },
-  "keywords": [
-    "parcel",
-    "react"
-  ],
-  "author": "“Robin <“wrobin@gmx.net”> (https://www.robinwieruch.de)",
+  "author": "DeepPerfection (https://deepperfection.pl)",
   "license": "MIT",
   "dependencies": {
     "react": "^16.2.0",
