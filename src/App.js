@@ -40,6 +40,16 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
+                <div id="toAbout">
+                    <svg height="19px" width="109px" version="1.1" viewBox="0 0 109 19">
+                        <defs />
+                        <g id="desktop" fill="none" stroke="none" strokeWidth="1">
+                            <g id="start" transform="translate(-906.000000, -1014.000000)">
+                                <polyline id="Path-3" points="906.666667 1015.66406 960.442708 1031.48438 1014.21875 1015.66406" stroke="#FFFFFF" strokeWidth="2" />
+                            </g>
+                        </g>
+                    </svg>
+                </div>
             </div>
         );
     }
