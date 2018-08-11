@@ -14,6 +14,7 @@ div#root::before {
   width: calc(100% - 40px);
   margin: 20px;
   z-index: 1;
+  pointer-events: none;
 }
 .nav {
   position: fixed;
@@ -32,23 +33,54 @@ div#root::before {
 .container__half {
   width: 50%;
   height: 100%;
+  position: relative;
 }
 .bar_content_bg {
   width: 100%;
   height: 100vh;
 }
 .half__image {
-  filter: brightness(53%) grayscale(8%);
+  filter: brightness(70%) grayscale(8%);
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
+.half__desc {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: MavenPro-Medium;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 4.01px;
+  text-align: center;
+  line-height: 28px;
+  text-shadow: 0 0 6px rgba(0,0,0,0.50);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.half__desc__button {
+  width: 230px;
+  border: 2px solid #FFFFFF;
+  border-radius: 21px;
+  font-family: MavenPro-Medium;
+  font-size: 13px;
+  color: #FFFFFF;
+  letter-spacing: 2.61px;
+  text-align: center;
+  padding: 3px 0;
+  margin-top: 20px;
+  text-decoration: none;
+}
 #root {
   height: 100%;
 }
-
 #menu_text {
   color: #fff;
   text-transform: uppercase;
