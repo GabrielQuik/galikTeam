@@ -46,8 +46,13 @@ class App extends Component {
                                 src={imageData.src}
                                 alt={imageData.alt}
                             />
-                            <div>
-
+                            <div className="half__desc">
+                                <span className="half__desc__text">
+                                    {imageData.alt}
+                                </span>
+                                <a href="#tak" className="half__desc__button">
+                                    wybierz
+                                </a>
                             </div>
                         </div>
                     ))}
