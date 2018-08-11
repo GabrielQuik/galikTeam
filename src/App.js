@@ -28,13 +28,16 @@ class App extends Component {
                         menu
                     </span>
                 </a>
-                <div className="content_start">
-                    <div className="left_content content_start_bar">
+                <div className="offer">
+                    <div className="left_content offer__elem">
                         <div className="bar_content_bg">
                             <img src={left_content_image} alt="Treningi personalne dla każdego" />
                         </div>
+                        <div className="">
+
+                        </div>
                     </div>
-                    <div className="right_content content_start_bar">
+                    <div className="right_content offer__elem">
                         <div className="bar_content_bg">
                             <img src={right_content_image} alt="Przygotowanie motoryczne sportowców" />
                         </div>

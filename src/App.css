@@ -45,13 +45,13 @@ body {
     text-decoration: none;
     display: flex;
 }
-.content_start {
+.offer {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
 }
-.content_start_bar {
+.offer__elem {
     width: 50%;
     height: 100%;
 }
@@ -59,7 +59,7 @@ body {
     width: 100%;
     height: 100vh;
 }
-.content_start_bar img {
+.offer__elem img {
     display: block;
     width: 100%;
     height: 100%;
