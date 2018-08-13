@@ -9,8 +9,8 @@ import rightContentImage from "../assets/images/M67A6522_2.jpg";
 class App extends Component {
     render() {
         const imageList = [
-            { src: leftContentImage, alt: 'Treningi personalne dla każdego', link: '/treningi-personalne' },
-            { src: rightContentImage, alt: 'Przygotowanie motoryczne sportowców', link: '/przygotowanie-motoryczne-sportowcow' }
+            { uid: 1, id: 'half__1', src: leftContentImage, alt: 'Treningi personalne dla każdego', link: '/treningi-personalne' },
+            { uid: 2, id: 'half__2', src: rightContentImage, alt: 'Przygotowanie motoryczne sportowców', link: '/przygotowanie-motoryczne-sportowcow' }
         ];
         return (
             <Fragment>
@@ -40,7 +40,7 @@ class App extends Component {
                 </a>
                 <div className="container">
                     {imageList.map(imageData => (
-                        <div className="container__half">
+                        <div key={imageData.uid} className={"container__half " + imageData.id}>
                             <img
                                 className="half__image"
                                 src={imageData.src}
@@ -50,7 +50,7 @@ class App extends Component {
                                 <span className="half__desc__text">
                                     {imageData.alt}
                                 </span>
-                                <a href="#tak" className="half__desc__button">
+                                <a href={imageData.link} data-id={imageData.id} className='half__desc__button'>
                                     wybierz
                                 </a>
                             </div>

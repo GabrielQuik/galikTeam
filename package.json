@@ -9,6 +9,8 @@
   "author": "DeepPerfection (https://deepperfection.pl)",
   "license": "MIT",
   "dependencies": {
+    "gsap": "^2.0.1",
+    "jquery": "^3.3.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
