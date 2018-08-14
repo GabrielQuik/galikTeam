@@ -66,18 +66,48 @@ div#root::before {
   flex-direction: column;
   align-items: center;
 }
-.half__desc__button {
+.button {
+  /* width: 234px;
+  height: 38px; */
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 21px;
+}
+.button__link {
   width: 230px;
   border: 2px solid #FFFFFF;
   border-radius: 21px;
   font-family: MavenPro-Medium;
   font-size: 13px;
-  color: #FFFFFF;
   letter-spacing: 2.61px;
   text-align: center;
   padding: 3px 0;
-  margin-top: 20px;
   text-decoration: none;
+  position: relative;
+  color: #fff;
+  display: block;
+  /* overflow: hidden; */
+  transition: 1s;
+}
+.button::after {
+  content: '';
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  background: #fff;
+  z-index: -1;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: .5s;
+}
+.button:hover::after {
+  height: 600%;
+}
+.button:hover a {
+  color: #000;
 }
 #root {
   height: 100%;

@@ -50,9 +50,11 @@ class App extends Component {
                                 <span className="half__desc__text">
                                     {imageData.alt}
                                 </span>
-                                <a href={imageData.link} data-id={imageData.id} className='half__desc__button'>
-                                    wybierz
-                                </a>
+                                <div data-id={imageData.id} className="button half__desc__button">
+                                    <a  href={imageData.link} className="button__link" data-id={imageData.id}>
+                                        wybierz
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     ))}
