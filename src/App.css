@@ -128,3 +128,14 @@ div#root::before {
   left: 50%;
   transform: translate(-50%, 0);
 }
+.header__logo {
+  position: fixed;
+  left: 50%;
+  top: 40px;
+  transform: translate(-50%, 0);
+  z-index: 9;
+}
+.header__logo__img {
+  width: 90px;
+  height: auto;
+}

@@ -6,6 +6,8 @@ import "./App.css";
 import leftContentImage from "../assets/images/M67A6522_1.jpg";
 import rightContentImage from "../assets/images/M67A6522_2.jpg";
 
+import logo from '../assets/images/galikteamlogo.png';
+
 class App extends Component {
     render() {
         const imageList = [
@@ -38,6 +40,9 @@ class App extends Component {
                     </svg>
                     <span id="menu_text">menu</span>
                 </a>
+                <div className='header__logo'>
+                    <img className="header__logo__img" src={logo} alt="GALIKteam"/>
+                </div>
                 <div className="container">
                     {imageList.map(imageData => (
                         <div key={imageData.uid} className={"container__half " + imageData.id}>
