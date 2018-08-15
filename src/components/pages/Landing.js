@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-import './js/index.js'
+// import './js/index.js'
 
-import leftContentImage from "../../assets/images/M67A6522_1.jpg";
-import rightContentImage from "../../assets/images/M67A6522_2.jpg";
+import leftContentImage from "../../../assets/images/M67A6522_1.jpg";
+import rightContentImage from "../../../assets/images/M67A6522_2.jpg";
 
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom'
-import '../App.css';
+import '../../App.css';
 
-import animations from './items/animations.js'
+import animations from '../items/animations.js'
 
 const imageList = [
   {

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Menu = () => (
+const MenuHamburger = () => (
   <a className="nav" href="#menu">
     <svg height="16px" width="27px" version="1.1" viewBox="0 0 27 16">
       <defs />
@@ -27,4 +27,4 @@ const Menu = () => (
   </a>
 )
 
-export default Menu
+export default MenuHamburger
