@@ -6,6 +6,7 @@ $('.half__desc__button').hover(
     let hoverID = $(this).attr('data-id');
     TweenLite.to($('.container__half.' + hoverID).find('img'), 2, {
       scale: 1.2,
+      filter: 'brightness(50%)',
       ease: Power4.easeOut
     });
   },
@@ -13,6 +14,7 @@ $('.half__desc__button').hover(
     let hoverID = $(this).attr('data-id');
     TweenLite.to($('.container__half.' + hoverID).find('img'), 1, {
       scale: 1,
+      filter: 'brightness(100%)',
       ease: Power4.easeOut
     });
   }
