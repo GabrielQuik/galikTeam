@@ -41,7 +41,6 @@ div#root::before {
   height: 100vh;
 }
 .half__image {
-  /* filter: brightness(70%) grayscale(8%); */
   display: block;
   width: 100%;
   height: 100%;
@@ -138,4 +137,50 @@ div#root::before {
 .header__logo__img {
   width: 90px;
   height: auto;
+}
+.main__nav {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 999;
+  opacity: 1;
+  background: rgba(0,0,0,.95);
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.main__nav__exit {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  font-size: 30px;
+  padding: 50px 50px;
+  cursor: pointer
+}
+
+.main__nav__container {
+  width: 50vw;
+  height: 100vh;
+  left: 20vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 3vw;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  flex-direction: column
+}
+
+.main__nav__item {
+  text-transform: uppercase;
+  padding: 15px 0;
+  cursor: pointer
+}
+
+.main__nav__item__link {
+  text-decoration: none;
+  color: #fff
 }
