@@ -1,7 +1,16 @@
 import React from 'react'
+import { Fragment } from 'react';
+import { Link } from 'react-router-dom'
+
+import '../App.css';
 
 const About = () => (
-    <div>MAMAAAA</div>
+    <Fragment>
+        <div className="container">
+
+        </div>
+    </Fragment>
+
 );
 
 export default About
