@@ -53,13 +53,13 @@ export default class Landing extends Component {
             <div className="half__desc">
               <span className="half__desc__text">{imageData.alt}</span>
               <div data-id={imageData.id} className="button half__desc__button">
-                <a
-                  href={imageData.link}
+                <Link
+                  to={imageData.link}
                   className="button__link"
                   data-id={imageData.id}
                 >
                   wybierz
-                </a>
+                </Link>
               </div>
             </div>
           </div>
