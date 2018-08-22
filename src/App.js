@@ -3,6 +3,7 @@ import { Fragment } from 'react';
 
 import MenuHamburger from './components/MenuHamburger.js'
 import Main from './Main.js'
+import './components/style/Border.css'
 
 const App = () => (
   <Fragment>

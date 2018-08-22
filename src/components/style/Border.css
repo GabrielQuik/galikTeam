@@ -1,0 +1,10 @@
+div#root::before {
+  content: "";
+  border: 2px solid #fff;
+  position: absolute;
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  margin: 20px;
+  z-index: 99;
+  pointer-events: none;
+}

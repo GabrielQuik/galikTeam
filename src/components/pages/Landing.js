@@ -83,7 +83,7 @@ export default class Landing extends Component {
         </Link>
       </div>
     </Fragment>
-  
+
     )
   }
 }
