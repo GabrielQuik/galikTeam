@@ -1,0 +1,13 @@
+.main {
+  height: 100vh;
+}
+
+.fade-enter {
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
