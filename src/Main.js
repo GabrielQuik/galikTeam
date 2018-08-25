@@ -6,6 +6,8 @@ import "./Main.css";
 
 import Landing from "./components/pages/Landing.js";
 import About from "./components/pages/About.js";
+import PersonalTraining from "./components/pages/PersonalTraining";
+import MotoricPreparation from "./components/pages/MotoricPreparation";
 
 const Main = () => (
   <Route
@@ -17,8 +19,10 @@ const Main = () => (
           timeout={300}
         >
           <Switch location={location}>
-            <Route exact path="/" component={Landing} />
-            <Route path="/o-mnie" component={About} />
+            <Route exact path='/' component={Landing} />
+            <Route path='/o-mnie' component={About} />
+            <Route path='/treningi-personalne' component={PersonalTraining} />
+            <Route path='/przygotowanie-motoryczne-sportowcow' component={MotoricPreparation} />
           </Switch>
         </CSSTransition>
       </TransitionGroup>
