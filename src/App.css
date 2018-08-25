@@ -181,7 +181,7 @@ body {
 .container__half__text--non-transparent {
   background: #000;
   color: #fff;
-  width: 50vw;
+  width: calc(50vw - 100px);
 }
 .container__half__text {
   display: flex;
