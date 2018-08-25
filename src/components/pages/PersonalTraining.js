@@ -12,6 +12,11 @@ const PersonalTraining = () => (
     <div className="container">
       <div className="container__half">
         <img className="half__image" src={Image} />
+        <div className="half__desc">
+          <span className="half__desc__text">
+            Treningi personalne dla każdego
+          </span>
+        </div>
       </div>
       <div className="container__half container__half__text container__half__text--non-transparent">
         <p>

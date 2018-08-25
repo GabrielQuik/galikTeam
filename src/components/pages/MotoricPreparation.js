@@ -41,6 +41,11 @@ const MotoricPreparation = () => (
       </div>
       <div className="container__half">
         <img className="half__image" src={Image} />
+        <div className="half__desc">
+          <span className="half__desc__text">
+            Przygotowanie motoryczne sportowców
+          </span>
+        </div>
       </div>
     </div>
   </Fragment>
