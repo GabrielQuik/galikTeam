@@ -5,6 +5,7 @@ body {
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #000;
 }
 .nav {
   position: fixed;
@@ -53,7 +54,7 @@ body {
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  align-items: center;`
+  align-items: center;
 }
 .button {
   /* width: 234px;
