@@ -6,9 +6,11 @@ import "../../App.css";
 import "../style/About.css";
 
 import Image from "../../../assets/images/M67A6522_2.jpg";
+import MenuHamburger from '../MenuHamburger';
 
 const MotoricPreparation = () => (
   <Fragment>
+  <MenuHamburger />
     <div className="container">
       <div className="container__half container__half__text container__half__text--non-transparent">
         <p>

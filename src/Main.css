@@ -1,7 +1,6 @@
 .main {
   height: 100vh;
 }
-
 .fade-enter {
   position: absolute;
   opacity: 0;

@@ -1,7 +1,8 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const MenuHamburger = () => (
-  <a className="nav" href="#menu">
+  <Link className="nav" to={"/menu"}>
     <svg height="16px" width="27px" version="1.1" viewBox="0 0 27 16">
       <defs />
       <g
@@ -24,7 +25,7 @@ const MenuHamburger = () => (
       </g>
     </svg>
     <span id="menu_text">menu</span>
-  </a>
-)
+  </Link>
+);
 
-export default MenuHamburger
+export default MenuHamburger;

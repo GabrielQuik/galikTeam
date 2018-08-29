@@ -1,16 +1,17 @@
-import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
 // import './js/index.js'
 
 import leftContentImage from "../../../assets/images/M67A6522_1.jpg";
 import rightContentImage from "../../../assets/images/M67A6522_2.jpg";
+import MenuHamburger from '../MenuHamburger';
 
 import { Fragment } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import '../../App.css';
 
-import animations from '../items/animations.js'
+import animations from '../items/animations.js';
 
 const imageList = [
   {
@@ -41,6 +42,7 @@ export default class Landing extends Component {
   render() {
     return (
       <Fragment>
+      <MenuHamburger />
       <div className="container">
         {imageList.map(imageData => (
           <div key={imageData.uid} className={"container__half " + imageData.id}>

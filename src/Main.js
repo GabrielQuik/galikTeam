@@ -8,6 +8,7 @@ import Landing from "./components/pages/Landing.js";
 import About from "./components/pages/About.js";
 import PersonalTraining from "./components/pages/PersonalTraining";
 import MotoricPreparation from "./components/pages/MotoricPreparation";
+import Menu from './components/Menu';
 
 const Main = () => (
   <Route
@@ -23,6 +24,7 @@ const Main = () => (
             <Route path='/o-mnie' component={About} />
             <Route path='/treningi-personalne' component={PersonalTraining} />
             <Route path='/przygotowanie-motoryczne-sportowcow' component={MotoricPreparation} />
+            <Route path='/menu' component={Menu} />
           </Switch>
         </CSSTransition>
       </TransitionGroup>

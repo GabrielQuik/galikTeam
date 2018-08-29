@@ -6,9 +6,11 @@ import '../../App.css';
 import '../style/About.css'
 
 import AboutImage from '../../../assets/images/M67A6384_1.jpg'
+import MenuHamburger from '../MenuHamburger';
 
 const About = () => (
     <Fragment>
+    <MenuHamburger />
         <div className="container">
             <div className="container__half">
                 <img className="half__image" src={AboutImage} />
