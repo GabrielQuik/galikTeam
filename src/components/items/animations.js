@@ -1,4 +1,4 @@
-import { TweenLite, Power4 } from "gsap/TweenMax";
+import { TweenMax, Power3 } from "gsap/TweenMax";
 import $ from 'jquery';
 
 export default {
@@ -6,18 +6,18 @@ export default {
     $('.half__desc__button').hover(
       function () {
         let hoverID = $(this).attr('data-id');
-        TweenLite.to($('.container__half.' + hoverID).find('img'), 2, {
+        TweenMax.to($('.container__half.' + hoverID).find('img'), 1, {
           scale: 1.2,
-          filter: 'brightness(50%)',
-          ease: Power4.easeOut
+          opacity: .5,
+          ease: Power3.easeInOut
         });
       },
       function () {
         let hoverID = $(this).attr('data-id');
-        TweenLite.to($('.container__half.' + hoverID).find('img'), 1, {
+        TweenMax.to($('.container__half.' + hoverID).find('img'), .5, {
           scale: 1,
-          filter: 'brightness(100%)',
-          ease: Power4.easeOut
+          opacity: 1,
+          ease: Power3.easeInOut
         });
       }
     );  
