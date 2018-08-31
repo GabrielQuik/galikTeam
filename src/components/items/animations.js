@@ -9,7 +9,7 @@ export default {
         TweenMax.to($('.container__half.' + hoverID).find('img'), 1, {
           scale: 1.2,
           opacity: .5,
-          ease: Power3.easeInOut
+          ease: Power3.easeOut
         });
       },
       function () {
@@ -17,7 +17,7 @@ export default {
         TweenMax.to($('.container__half.' + hoverID).find('img'), .5, {
           scale: 1,
           opacity: 1,
-          ease: Power3.easeInOut
+          ease: Power3.easeOut
         });
       }
     );  

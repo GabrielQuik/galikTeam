@@ -13,32 +13,23 @@ const MotoricPreparation = () => (
   <MenuHamburger />
     <div className="container">
       <div className="container__half container__half__text container__half__text--non-transparent">
-        <p>
-          Spicy jalapeno bacon ipsum dolor amet consequat magna cupidatat tongue
-          bresaola t-bone. Pancetta commodo sirloin bacon sint. Dolor tempor ut
-          pig dolore pork chop t-bone, ribeye brisket bresaola eiusmod in
-          incididunt ipsum duis. Buffalo prosciutto shankle enim. Eu rump
-          meatloaf, pork loin ex chicken short loin meatball est pancetta kevin
-          fugiat eiusmod salami. Prosciutto ipsum flank tongue. Dolore sint
-          burgdoggen, esse tenderloin ipsum short loin turducken spare ribs
-          chuck occaecat. Kielbasa pastrami cow, aliquip lorem consectetur
-          adipisicing ut. T-bone doner turducken, sunt sed lorem dolor nisi
-          swine commodo chicken nulla id beef. Labore reprehenderit nostrud, ut
-          fugiat quis sausage velit in beef est. Bacon kielbasa do tri-tip
-          labore dolore. Tongue venison tenderloin aute occaecat fugiat turkey
-          cupidatat officia buffalo reprehenderit in laborum. Tenderloin
-          excepteur short ribs, jerky occaecat laborum adipisicing tail turkey
-          chuck burgdoggen ground round bacon pastrami. Ham salami nostrud,
-          capicola sausage in burgdoggen minim. Filet mignon rump excepteur,
-          brisket jerky ut landjaeger corned beef pancetta tempor. Burgdoggen
-          adipisicing turkey mollit porchetta picanha cupim exercitation short
-          ribs ullamco strip steak. Does your lorem ipsum text long for
-          something a little meatier? Give our generator a try… it’s tasty!
-        </p>
-        <div className="button">
-          <a className="button__link" href="/kontakt">
-            kontakt
-          </a>
+        <div className="container__half__text__cutter container__half__text__cutter--left">
+          <div className="container__half__text__content__other_container">
+            <div className="container__half__text__content container__half__text__content--justify">
+              <p>
+                Specjalizujemy się przede wszystkim w dostarczaniu usług związanych z treningiem motorycznym w sportach drużynowych oraz indywidualnych.
+              <br /><br />Robimy wszystko, aby nasi Zawodnicy dzięki naszym treningom potrafili wykorzystać swój maksymalny potencjał oferując im profesjonalną, kompleksową opiekę trenerską. Naszym marzeniem jest przekraczanie każdych możliwych granic i poprawne kierowanie sportowcami różnorakich dyscyplin.
+              <br /><br />Rozwój to proces który nie ma końca - zawsze znajdzie się rzecz nad którą można i trzeba popracować.
+              <br /><br />Chcesz zwiększyć swoją wytrzymałość, szybkość lub siłę? Chcesz poprawić swoją sprawność i być lepiej ukształtowanym sportowcem mniej podatnym na kontuzje? Chcesz wznieść się na wyżyny swoich umiejętności?
+              <br /><br />Zrób w końcu krok w przód i SIĘGNIJ PO SWOJE - zapracuj z naszą pomocą na swoją historię.
+            </p>
+              <div className="button button--align_right">
+                <a className="button__link" href="/kontakt">
+                  kontakt
+              </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="container__half">
@@ -47,6 +38,14 @@ const MotoricPreparation = () => (
           <span className="half__desc__text">
             Przygotowanie motoryczne sportowców
           </span>
+          <div className="button half__desc__button">
+            <Link
+              to='/'
+              className="button__link"
+            >
+              Inne treningi
+                </Link>
+          </div>
         </div>
       </div>
     </div>

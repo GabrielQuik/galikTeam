@@ -14,6 +14,26 @@ body {
   text-decoration: none;
   display: flex;
   z-index: 99;
+  transition: .3s;
+}
+.nav:hover {
+  transform: scale(0.95);
+}
+.logo__link {
+  width: 80px;
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+.logo__link__image:hover {
+  transform: scale(0.95);
+}
+.logo__link__image {
+  width: 80px;
+  height: auto;
+  transition: .3s;
 }
 .container {
   width: 100%;
@@ -22,7 +42,7 @@ body {
   flex-direction: row;
 }
 .container__half {
-  width: 50%;
+  width: 50vw;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -44,8 +64,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: MavenPro-Medium;
-  font-size: 20px;
+  font-family: Maven Pro;
+  font-size: 1.25rem;
   color: #FFFFFF;
   letter-spacing: 4.01px;
   text-align: center;
@@ -70,7 +90,7 @@ body {
   width: 230px;
   border: 2px solid #FFFFFF;
   border-radius: 21px;
-  font-family: MavenPro-Medium;
+  font-family: Maven Pro;
   font-size: 13px;
   letter-spacing: 2.61px;
   text-align: center;
@@ -111,7 +131,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
-  font-family: MavenPro-Medium;
+  font-family: Maven Pro;
   letter-spacing: 2.81px;
   text-align: center;
   padding-left: 20px;
@@ -182,15 +202,55 @@ body {
 .container__half__text--non-transparent {
   background: #000;
   color: #fff;
-  width: calc(50vw - 100px);
 }
 .container__half__text {
-  display: flex;
-  text-align: left;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 50px;
   letter-spacing: 2.81px;
   line-height: 28px;
+}
+.container__half__text__content {
+  overflow: auto;
+  padding: 30px 60px;
+}
+.container__half__text__cutter::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.container__half__text__content__other_container {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+}
+.container__half__text__cutter {
+  height: calc(100vh - 40px);
+  width: calc(50vw - 22px);
+  overflow-x: auto;
+  top: 22px;
+  position: absolute;
+  padding-right: 22px;
+}
+.container__half__text__cutter--left {
+  width: calc(50vw - 22px);
+  padding-left: 22px;
+  padding-right: 0;
+}
+.half__desc__text--pages {
+  font-family: 'Lato';
+}
+.container__half__text__content--justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.button--align_right {
+  float: right;
+}
+.container__half__text__content__bigger {
+  font-weight: 600;
+}
+.buttons__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.button__link--mini {
+  width: 170px;
+  font-size: 12px;
 }
