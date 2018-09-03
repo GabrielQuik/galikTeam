@@ -2,18 +2,41 @@ import React from "react";
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 
-
 import "./Menu.css";
 
-const Menu = (router) => (
+const menuList = [
+  {
+    id: "item__1",
+    content: "galik team",
+    link: "/"
+  },
+  {
+    id: "item__2",
+    content: "trening personalny",
+    link: "/treningi-personalne"
+  },
+  {
+    id: "item__3",
+    content: "przygotowanie motoryczne",
+    link: "/przygotowanie-motoryczne-sportowcow"
+  },
+  {
+    id: "item__4",
+    content: "o mnie",
+    link: "/o-mnie"
+  },
+  {
+    id: "item__5",
+    content: "kontakt",
+    link: "/kontakt"
+  }
+];
+
+const Menu = router => (
   <Fragment>
-    <div className="menu">
-      <a className="nav" onClick={router.history.goBack} >
-        <svg
-          viewBox="0 0 449.998 449.998"
-          width="27px"
-          height="27px"
-        >
+    <div className="wrapper">
+      <a className="nav" onClick={router.history.goBack}>
+        <svg viewBox="0 0 449.998 449.998" width="27px" height="27px">
           <g>
             <g>
               <polygon
@@ -24,6 +47,15 @@ const Menu = (router) => (
           </g>
         </svg>
       </a>
+      <div className="wrapper__menu">
+        {menuList.map(menuItem => (
+          <div className="menu__item">
+            <Link to={menuItem.link} className="menu__item__link">
+              {menuItem.content}
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   </Fragment>
 );
