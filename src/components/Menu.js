@@ -7,7 +7,7 @@ import "./Menu.css";
 const menuList = [
   {
     id: "item__1",
-    content: "galik team",
+    content: "start",
     link: "/"
   },
   {
@@ -35,8 +35,18 @@ const menuList = [
 const Menu = router => (
   <Fragment>
     <div className="wrapper">
+      
+      <div className="wrapper__menu">
+        {menuList.map(menuItem => (
+          <div key={menuItem.id} className="menu__item">
+            <Link to={menuItem.link} className="menu__item__link">
+              {menuItem.content}
+            </Link>
+          </div>
+        ))}
+      </div>
       <a className="nav" onClick={router.history.goBack}>
-        <svg viewBox="0 0 449.998 449.998" width="27px" height="27px">
+        <svg viewBox="0 0 449.998 449.998" width="20px" height="20px">
           <g>
             <g>
               <polygon
@@ -47,15 +57,6 @@ const Menu = router => (
           </g>
         </svg>
       </a>
-      <div className="wrapper__menu">
-        {menuList.map(menuItem => (
-          <div className="menu__item">
-            <Link to={menuItem.link} className="menu__item__link">
-              {menuItem.content}
-            </Link>
-          </div>
-        ))}
-      </div>
     </div>
   </Fragment>
 );

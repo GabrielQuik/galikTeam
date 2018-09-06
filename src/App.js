@@ -7,7 +7,7 @@ import './components/style/Border.css'
 
 const App = () => (
   <Fragment>
-    <Logo />
+    
     <Main />
   </Fragment>
 );

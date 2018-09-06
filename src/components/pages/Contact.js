@@ -5,17 +5,21 @@ import { Link } from 'react-router-dom'
 import '../../App.css';
 import '../style/About.css'
 
+import MenuHamburger from '../MenuHamburger';
+
 import ContactImage from '../../../assets/images/M67A6552_1.jpg'
 
-const About = () => (
+const Contact = () => (
   <Fragment>
+    
     <div className="container">
+    <MenuHamburger />
       <div className="container__half">
         <img className="full__image" src={ContactImage} />
         <div className="half__desc">
           <span className="half__desc__text half__desc__text--pages">
-            Michał Galikowski
-                    </span>
+            Kontakt
+          </span>
         </div>
       </div>
       <div className="container__half container__half__text container__half__text--non-transparent">
@@ -53,4 +57,4 @@ const About = () => (
 
 );
 
-export default About
+export default Contact

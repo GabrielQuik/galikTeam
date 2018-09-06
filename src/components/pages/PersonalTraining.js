@@ -10,9 +10,10 @@ import MenuHamburger from '../MenuHamburger';
 
 const PersonalTraining = () => (
   <Fragment>
-  <MenuHamburger />
+  
     <div className="container">
-      <div className="container__half">
+    <MenuHamburger />
+      <div className="container__half container__half__image">
         <img className="half__image" src={Image} />
         <div className="half__desc">
           <span className="half__desc__text">

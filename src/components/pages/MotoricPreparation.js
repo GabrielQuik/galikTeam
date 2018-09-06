@@ -10,8 +10,9 @@ import MenuHamburger from '../MenuHamburger';
 
 const MotoricPreparation = () => (
   <Fragment>
-  <MenuHamburger />
+  
     <div className="container">
+    <MenuHamburger />
       <div className="container__half container__half__text container__half__text--non-transparent">
         <div className="container__half__text__cutter container__half__text__cutter--left">
           <div className="container__half__text__content__other_container">

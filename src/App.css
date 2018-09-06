@@ -25,7 +25,7 @@ body {
   top: 40px;
   left: 50%;
   transform: translate(-50%, 0);
-  z-index: 2;
+  z-index: 9999999;
 }
 .logo__link__image:hover {
   transform: scale(0.95);
@@ -253,4 +253,24 @@ body {
 .button__link--mini {
   width: 170px;
   font-size: 12px;
+}
+@media only screen and (orientation: portrait) {
+  .container__half {
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .logo__link {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .half__desc {
+    font-size: 1.2rem;
+  }
+  div#root::before {
+    height: calc(100% - 20px) !important;
+    width: calc(100% - 20px) !important;
+    margin: 10px !important;
+  }
 }

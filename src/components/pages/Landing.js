@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 // import './js/index.js'
+import Logo from '../../components/Logo.js';
 
 import leftContentImage from "../../../assets/images/M67A6522_1.jpg";
 import rightContentImage from "../../../assets/images/M67A6522_2.jpg";
@@ -42,8 +43,10 @@ export default class Landing extends Component {
   render() {
     return (
       <Fragment>
-      <MenuHamburger />
+      
       <div className="container">
+      <Logo />
+      <MenuHamburger />
         {imageList.map(imageData => (
           <div key={imageData.uid} className={"container__half " + imageData.id}>
             <img
