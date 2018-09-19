@@ -2,8 +2,6 @@ import React from "react";
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 
-import "./Menu.css";
-
 const menuList = [
   {
     id: "item__1",
@@ -36,10 +34,10 @@ const Menu = router => (
   <Fragment>
     <div className="wrapper">
       
-      <div className="wrapper__menu">
+      <div className="menu">
         {menuList.map(menuItem => (
-          <div key={menuItem.id} className="menu__item">
-            <Link to={menuItem.link} className="menu__item__link">
+          <div key={menuItem.id} className="menu-item">
+            <Link to={menuItem.link} className="menu-item__link">
               {menuItem.content}
             </Link>
           </div>

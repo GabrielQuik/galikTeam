@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-// import './js/index.js'
 import Logo from '../../components/Logo.js';
 
 import leftContentImage from "../../../assets/images/M67A6522_1.jpg";
@@ -10,7 +9,6 @@ import MenuHamburger from '../MenuHamburger';
 
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import '../../App.css';
 
 import animations from '../items/animations.js';
 
@@ -48,16 +46,16 @@ export default class Landing extends Component {
       <Logo />
       <MenuHamburger />
         {imageList.map(imageData => (
-          <div key={imageData.uid} className={"container__half " + imageData.id}>
+          <div key={imageData.uid} className={"half-size-item " + imageData.id}>
             <img
-              className="half__image"
+              className="half-size-item__image"
               src={imageData.src}
               alt={imageData.alt}
               draggable="false"
             />
-            <div className="half__desc">
-              <span className="half__desc__text">{imageData.alt}</span>
-              <div data-id={imageData.id} className="button half__desc__button">
+            <div className="half-size-item__desc">
+              <span className="half-size-item__title">{imageData.alt}</span>
+              <div data-id={imageData.id} className="button half-size-item__button">
                 <Link
                   to={imageData.link}
                   className="button__link"
@@ -70,7 +68,7 @@ export default class Landing extends Component {
           </div>
         ))}
       </div>
-      <div id="toAbout">
+      <div id="go-arrow">
         <Link to={"/o-mnie"}>
           <svg height="19px" width="109px" version="1.1" viewBox="0 0 109 19">
             <defs />

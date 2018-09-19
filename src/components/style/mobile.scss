@@ -1,0 +1,30 @@
+@media only screen and (orientation: portrait) {
+    .half-size-item {
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .logo {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .half-size-item__desc {
+        font-size: 1.2rem;
+    }
+    .half-size-item__title {
+        width: 90vw;
+    }
+    .nav {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .nav:hover {
+        transform: scale(0.95) translate(-50%, 0);
+    }
+    div#root::before {
+        height: calc(100% - 20px) !important;
+        width: calc(100% - 20px) !important;
+        margin: 10px !important;
+    }
+}
