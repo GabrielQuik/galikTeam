@@ -2,8 +2,7 @@ import React from 'react'
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom'
 
-import '../../App.css';
-import '../style/About.css'
+import Logo from '../../components/Logo.js';
 
 import MenuHamburger from '../MenuHamburger';
 
@@ -14,22 +13,23 @@ const Contact = () => (
     
     <div className="container">
     <MenuHamburger />
-      <div className="container__half">
+    <Logo />
+      <div className="half-size-item half-size-item__image">
         <img className="full__image" src={ContactImage} />
-        <div className="half__desc">
-          <span className="half__desc__text half__desc__text--pages">
+        <div className="half-size-item__desc">
+          <span className="half-size-item__text half-size-item__text--pages">
             Kontakt
           </span>
         </div>
       </div>
-      <div className="container__half container__half__text container__half__text--non-transparent">
-        <div className="container__half__text__cutter">
-          <div className="container__half__text__content__other_container">
-            <div className="container__half__text__content container__half__text__content--justify">
+      <div className="half-size-item half-size-item__text half-size-item__text--non-transparent">
+        <div className="half-size-item__text__cutter">
+          <div className="half-size-item__text__content__other_container">
+            <div className="half-size-item__text__content half-size-item__text__content--justify">
               <p>
                 Chcesz wiedzieć więcej albo nawiązać z nami współpracę?
                           <br />Teraz właśnie TY masz okazję być Mistrzem.
-                          <br /><br /><span className='container__half__text__content__bigger'>Odezwij się!</span>
+                          <br /><br /><span className='half-size-item__text__content__bigger'>Odezwij się!</span>
               </p>
               <div className="buttons__container">
                 <div className="button button--mini">
@@ -48,6 +48,12 @@ const Contact = () => (
                   </a>
                 </div>
               </div>
+              <p>
+                Chcesz wiedzieć więcej albo
+                <br />nawiązać z nami współpracę?
+                <br />Teraz właśnie TY
+                <br />masz okazję być Mistrzem.
+              </p>
             </div>
           </div>
         </div>

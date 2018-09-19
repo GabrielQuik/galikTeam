@@ -2,8 +2,7 @@ import React from "react";
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 
-import "../../App.css";
-import "../style/About.css";
+import Logo from '../../components/Logo.js';
 
 import Image from "../../../assets/images/M67A6522_1.jpg";
 import MenuHamburger from '../MenuHamburger';
@@ -13,13 +12,14 @@ const PersonalTraining = () => (
   
     <div className="container">
     <MenuHamburger />
-      <div className="container__half container__half__image">
-        <img className="half__image" src={Image} />
-        <div className="half__desc">
-          <span className="half__desc__text">
+    <Logo />
+      <div className="half-size-item half-size-item__image">
+        <img className="half-size-item__image" src={Image} />
+        <div className="half-size-item__desc">
+          <span className="half-size-item__text">
             Treningi personalne dla każdego
           </span>
-          <div className="button half__desc__button">
+          <div className="button half-size-item__button">
             <Link
               to='/'
               className="button__link"
@@ -29,10 +29,10 @@ const PersonalTraining = () => (
           </div>
         </div>
       </div>
-      <div className="container__half container__half__text container__half__text--non-transparent">
-        <div className="container__half__text__cutter"></div>
-        <div className="container__half__text__content__other_container">
-          <div className="container__half__text__content container__half__text__content--justify">
+      <div className="half-size-item half-size-item__text half-size-item__text--non-transparent">
+        <div className="half-size-item__text__cutter">
+        <div className="half-size-item__text__content__other_container">
+          <div className="half-size-item__text__content half-size-item__text__content--justify">
             <p>
             Już teraz masz okazję trenować po mistrzowsku.
             
@@ -49,6 +49,7 @@ const PersonalTraining = () => (
           </a>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>

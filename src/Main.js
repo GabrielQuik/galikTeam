@@ -2,7 +2,6 @@ import React from "react";
 import { Switch, Route, withRouter } from "react-router-dom";
 
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import "./Main.css";
 
 import Landing from "./components/pages/Landing.js";
 import About from "./components/pages/About.js";
@@ -10,6 +9,8 @@ import Contact from "./components/pages/Contact.js";
 import PersonalTraining from "./components/pages/PersonalTraining";
 import MotoricPreparation from "./components/pages/MotoricPreparation";
 import Menu from './components/Menu';
+
+import './App.scss';
 
 const Main = withRouter(({location}) =>
   <div className="main">
@@ -31,14 +32,5 @@ const Main = withRouter(({location}) =>
           </TransitionGroup>
   </div>
 )
-    // <Route
-    //   render={({ location }) => (
-    //    <div>
-
-          
-    //     </div>
-    //   )}
-    // />
-// );
 
 export default Main;

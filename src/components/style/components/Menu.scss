@@ -1,3 +1,15 @@
+.nav {
+  position: fixed;
+  top: 45px;
+  left: 50px;
+  text-decoration: none;
+  display: flex;
+  z-index: 99;
+  transition: .3s;
+}
+.nav:hover {
+  transform: scale(0.95);
+}
 .wrapper {
   height: 100vh;
   background-color: black;
@@ -6,7 +18,7 @@
 .nav {
   cursor: pointer;
 }
-.wrapper__menu {
+.menu {
   width: 100vw;
   height: inherit;
   position: absolute;
@@ -15,7 +27,7 @@
   justify-content: center;
   align-items: center;
 }
-.menu__item a:before {
+.menu-item a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -29,12 +41,12 @@
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-.menu__item a:hover:before {
+.menu-item a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-.menu__item {
+.menu-item {
   font-size: 3.5vw;
   font-weight: bolder;
   font-family: Maven Pro;
@@ -44,7 +56,7 @@
   cursor: pointer;
   position: relative;
 }
-.menu__item__link {
+.menu-item__link {
   text-decoration: none;
   color: white;
 }
